@@ -8,25 +8,11 @@ import {
   Link
 } from 'react-router-dom';
 
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function SemanticHTML() {
-  return <h2>Semantic HTML</h2>;
-}
-
-function ImagePage() {
-  return <h2>Image</h2>;
-}
-
-function Aria() {
-  return <h2>Aria</h2>;
-}
-
-function Form() {
-  return <h2>Form</h2>;
-}
+import { Home } from './components/Home';
+import { SemanticHTML } from './components/SemanticHTML';
+import { Image } from './components/Image';
+import { Aria } from './components/Aria';
+import { Form } from './components/Form';
 
 function App() {
   return (
@@ -56,7 +42,7 @@ function App() {
           <SemanticHTML />
         </Route>
         <Route path="/image">
-          <ImagePage />
+          <Image />
         </Route>
         <Route path="/aria">
           <Aria />
