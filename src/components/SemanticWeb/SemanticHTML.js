@@ -2,7 +2,10 @@ import React, { Fragment } from 'react';
 
 export const SemanticHTML = () => (
   <Fragment>
+    <h1>Semantic HTML</h1>
+
     <font size="7">My heading</font>
+
     <br></br>
     <br></br>
 

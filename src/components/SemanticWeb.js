@@ -5,7 +5,6 @@ export const SemanticWeb = () => (
   <Fragment>
     <h1>Semantic Web</h1>
 
-    <h1>Semantic HTML</h1>
     <SemanticHTML />
 
   </Fragment>
