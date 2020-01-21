@@ -6,18 +6,26 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom";
+} from 'react-router-dom';
 
 function Home() {
   return <h2>Home</h2>;
 }
 
-function About() {
-  return <h2>About</h2>;
+function SemanticHTML() {
+  return <h2>Semantic HTML</h2>;
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function ImagePage() {
+  return <h2>Image</h2>;
+}
+
+function Aria() {
+  return <h2>Aria</h2>;
+}
+
+function Form() {
+  return <h2>Form</h2>;
 }
 
 function App() {
@@ -29,20 +37,32 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/semantic-html">Semantic HTML</Link>
           </li>
           <li>
-            <Link to="/users">Users</Link>
+            <Link to="/image">Image</Link>
+          </li>
+          <li>
+            <Link to="/aria">Aria</Link>
+          </li>
+          <li>
+            <Link to="/form">Form</Link>
           </li>
         </ul>
       </nav>
 
       <Switch>
-        <Route path="/about">
-          <About />
+        <Route path="/semantic-html">
+          <SemanticHTML />
         </Route>
-        <Route path="/users">
-          <Users />
+        <Route path="/image">
+          <ImagePage />
+        </Route>
+        <Route path="/aria">
+          <Aria />
+        </Route>
+        <Route path="/form">
+          <Form />
         </Route>
         <Route path="/">
           <Home />
