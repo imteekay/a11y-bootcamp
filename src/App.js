@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import { Home } from './components/Home';
-import { SemanticHTML } from './components/SemanticHTML';
+import { SemanticWeb } from './components/SemanticWeb';
 import { Image } from './components/Image';
 import { Aria } from './components/Aria';
 import { Form } from './components/Form';
@@ -22,7 +22,7 @@ export const App = () => (
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/semantic-html">Semantic HTML</Link>
+          <Link to="/semantic-web">Semantic Web</Link>
         </li>
         <li>
           <Link to="/image">Image</Link>
@@ -37,8 +37,8 @@ export const App = () => (
     </nav>
 
     <Switch>
-      <Route path="/semantic-html">
-        <SemanticHTML />
+      <Route path="/semantic-web">
+        <SemanticWeb />
       </Route>
       <Route path="/image">
         <Image />
