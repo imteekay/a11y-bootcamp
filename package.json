@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +36,8 @@
   "devDependencies": {
     "axe-core": "^3.4.1",
     "cypress": "^3.8.3",
-    "cypress-axe": "^0.5.3"
+    "cypress-axe": "^0.5.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3"
   }
 }
