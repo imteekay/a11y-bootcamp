@@ -1,6 +1,6 @@
-describe('/semantic-web', () => {
+describe('/image', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/semantic-web');
+    cy.visit('http://localhost:3000/image');
     cy.injectAxe();
   });
 
