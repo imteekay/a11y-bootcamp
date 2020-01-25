@@ -16,6 +16,7 @@ import { Form } from './components/Form';
 
 export const App = () => (
   <Router>
+    <header>Accessibility Bootcamp</header>
     <nav>
       <ul>
         <li>
@@ -36,22 +37,24 @@ export const App = () => (
       </ul>
     </nav>
 
-    <Switch>
-      <Route path="/semantic-web">
-        <SemanticWeb />
-      </Route>
-      <Route path="/image">
-        <Image />
-      </Route>
-      <Route path="/aria">
-        <Aria />
-      </Route>
-      <Route path="/form">
-        <Form />
-      </Route>
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
+    <main>
+      <Switch>
+        <Route path="/semantic-web">
+          <SemanticWeb />
+        </Route>
+        <Route path="/image">
+          <Image />
+        </Route>
+        <Route path="/aria">
+          <Aria />
+        </Route>
+        <Route path="/form">
+          <Form />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </main>
   </Router>
 );
