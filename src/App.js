@@ -1,26 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
-export default App;
+import { Home } from './components/Home';
+import { SemanticWeb } from './components/SemanticWeb';
+import { Image } from './components/Image';
+import { Aria } from './components/Aria';
+import { Form } from './components/Form';
+
+export const App = () => (
+  <Router>
+    <header>Accessibility Bootcamp</header>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/semantic-web">Semantic Web</Link>
+        </li>
+        <li>
+          <Link to="/image">Image</Link>
+        </li>
+        <li>
+          <Link to="/aria">Aria</Link>
+        </li>
+        <li>
+          <Link to="/form">Form</Link>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <Switch>
+        <Route path="/semantic-web">
+          <SemanticWeb />
+        </Route>
+        <Route path="/image">
+          <Image />
+        </Route>
+        <Route path="/aria">
+          <Aria />
+        </Route>
+        <Route path="/form">
+          <Form />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </main>
+  </Router>
+);
