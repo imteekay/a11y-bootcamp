@@ -4,11 +4,8 @@ export const SemanticWeb = () => (
   <Fragment>
     <h1>Semantic Web</h1>
 
-    <h1>Semantic HTML</h1>
+    <h1>Lists</h1>
 
-    <font size="7">My heading</font>
-
-    <br></br>
     <br></br>
 
     This is the first section of my document.
@@ -19,7 +16,7 @@ export const SemanticWeb = () => (
       <li>Item 3</li>
     </div>
 
-    <font size="5">My subheading</font>
+    <font size="5">Buttons</font>
 
     <br></br>
     <br></br>
