@@ -13,29 +13,11 @@ import { SemanticWeb } from './components/SemanticWeb';
 import { Image } from './components/Image';
 import { Aria } from './components/Aria';
 import { Form } from './components/Form';
+import { AppBar } from './components/AppBar';
 
 export const App = () => (
   <Router>
-    <header>Accessibility Bootcamp</header>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/semantic-web">Semantic Web</Link>
-        </li>
-        <li>
-          <Link to="/image">Image</Link>
-        </li>
-        <li>
-          <Link to="/aria">Aria</Link>
-        </li>
-        <li>
-          <Link to="/form">Form</Link>
-        </li>
-      </ul>
-    </nav>
+    <AppBar title="Accessibility Bootcamp" />
 
     <main>
       <Switch>
