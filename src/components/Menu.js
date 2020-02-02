@@ -24,6 +24,7 @@ export const Menu = ({ classes }) => {
         className={classes.menuButton}
         color="inherit"
         onClick={handleClick}
+        aria-label="Menu Principal"
       >
         <MenuIcon />
       </IconButton>
