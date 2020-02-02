@@ -44,9 +44,6 @@ export const Menu = ({ classes }) => {
           <Link to="/image">Image</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link to="/aria">Aria</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
           <Link to="/form">Form</Link>
         </MenuItem>
       </MenuUI>

@@ -4,14 +4,12 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 import { Home } from './components/Home';
 import { SemanticWeb } from './components/SemanticWeb';
 import { Image } from './components/Image';
-import { Aria } from './components/Aria';
 import { Form } from './components/Form';
 import { AppBar } from './components/AppBar';
 
@@ -26,9 +24,6 @@ export const App = () => (
         </Route>
         <Route path="/image">
           <Image />
-        </Route>
-        <Route path="/aria">
-          <Aria />
         </Route>
         <Route path="/form">
           <Form />
