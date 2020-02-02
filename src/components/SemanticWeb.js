@@ -4,25 +4,20 @@ export const SemanticWeb = () => (
   <Fragment>
     <h1>Semantic Web</h1>
 
-    <h1>Lists</h1>
+    <h2>Semantic HTML</h2>
 
-    <br></br>
+    <p>This is the first section of my document.</p>
 
-    This is the first section of my document.
-
-    <div>
+    <ul>
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
-    </div>
+    </ul>
 
-    <font size="5">Buttons</font>
+    <h2>My subheading</h2>
 
-    <br></br>
-    <br></br>
+    <p>This is the first subsection of my document. I'd love people to be able to find this content!</p>
 
-    This is the first subsection of my document. I'd love people to be able to find this content!
-
-    <div className="button-ish">Capture Pikachu!</div>
+    <button>Capture Pikachu!</button>
   </Fragment>
 );
