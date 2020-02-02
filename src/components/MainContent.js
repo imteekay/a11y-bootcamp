@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Switch, Route } from 'react-router-dom';
 
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 
@@ -25,26 +24,22 @@ export const MainContent = () => {
 
   return (
     <main className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <Switch>
-              <Route path="/semantic-web">
-                <SemanticWeb />
-              </Route>
-              <Route path="/image">
-                <Image />
-              </Route>
-              <Route path="/form">
-                <Form />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </Paper>
-        </Grid>
-      </Grid>
+      <Paper className={classes.paper}>
+        <Switch>
+          <Route path="/semantic-web">
+            <SemanticWeb />
+          </Route>
+          <Route path="/image">
+            <Image />
+          </Route>
+          <Route path="/form">
+            <Form />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Paper>
     </main>
   );
 };
