@@ -5,7 +5,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-
 export const Menu = ({ classes }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -16,6 +15,13 @@ export const Menu = ({ classes }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const items = [
+    { link: '/', label: 'Home' },
+    { link: '/semantic-web', label: 'Semantic Web' },
+    { link: '/image', label: 'Image' },
+    { link: '/form', label: 'Form' }
+  ];
 
   return (
     <Fragment>
@@ -34,18 +40,11 @@ export const Menu = ({ classes }) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>
-          <Link to="/">Home</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/semantic-web">Semantic Web</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/image">Image</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="/form">Form</Link>
-        </MenuItem>
+        {items.map((item) => (
+          <MenuItem onClick={handleClose}>
+            <Link to={item.link}>{item.label}</Link>
+          </MenuItem>
+        ))}
       </MenuUI>
     </Fragment>
   );
