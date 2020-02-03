@@ -38,7 +38,7 @@ export const Form = () => (
 
     <div>
       <label htmlFor="favcity">Favorite city?</label>
-      <select id="favcity" name="select">
+      <select id="favcity" name="favcity">
         <option value="1">Amsterdam</option>
         <option value="2">Hong Kong</option>
         <option value="3">London</option>
