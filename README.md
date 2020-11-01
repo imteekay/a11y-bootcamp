@@ -17,5 +17,5 @@ yarn run start
 ## Run Cypress tests
 
 ```bash
-yarn run cypress:open
+yarn run cypress
 ```
